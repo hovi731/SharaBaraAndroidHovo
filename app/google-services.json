@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "915359571265",
+    "project_id": "sharabaraapp",
+    "storage_bucket": "sharabaraapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915359571265:android:15cb10e99d402d327f55c0",
+        "android_client_info": {
+          "package_name": "com.thewise.sharabara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "915359571265-a4hqvn6hmb4akc5f30kfm44eociichto.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs_lxuiIrkq1tGUpQusqJHyBjPm-Txqj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "915359571265-a4hqvn6hmb4akc5f30kfm44eociichto.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "915359571265-5a206lendvri94q37iljv6ibts8cdbdb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.thewise.sharabara",
+                "app_store_id": "1569432768"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

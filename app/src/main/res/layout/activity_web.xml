@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/light_white_dark_black"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="8dp"
+            app:tint="@color/blue"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:layout_marginEnd="16dp"
+            android:visibility="gone"
+            android:textColor="@color/text_color_white_dark"
+            tools:text="@tools:sample/lorem" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_baseline_more_vert_24"
+            app:tint="@color/blue"
+            tools:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+        <LinearLayout
+            android:id="@+id/sharabara_icon_container"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_gravity="center"
+                android:src="@drawable/shb"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Шарабара"
+                android:textSize="18sp"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/days"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/nav_container"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:navGraph="@navigation/nav_graph" />
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/gifloader"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center">
+        <pl.droidsonroids.gif.GifImageView
+
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shbloader"
+            android:launchMode="singleTask"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

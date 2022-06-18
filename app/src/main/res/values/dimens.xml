@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="menu_animation_duration">10</integer>
+    <integer name="anim_regular">225</integer>
+    <integer name="animator_button_duration">125</integer>
+</resources>
